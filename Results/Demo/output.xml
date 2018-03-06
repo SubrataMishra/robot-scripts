@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180302 14:36:12.853" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\development\robot-scripts\Tests\Demo.robot" id="s1" name="Demo">
+<test id="s1-t1" name="Valid Login Should Succeed">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20180302 14:36:12.977" level="INFO">Opening browser 'ff' to base url 'http://localhost:7272'</msg>
+<status status="PASS" endtime="20180302 14:36:19.809" starttime="20180302 14:36:12.977"></status>
+</kw>
+<kw name="Input Credentials And Login">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180302 14:36:23.332" starttime="20180302 14:36:19.810"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180302 14:36:25.333" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180302 14:36:25.333" starttime="20180302 14:36:23.332"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>id=username_field</arg>
+</arguments>
+<msg timestamp="20180302 14:36:25.372" level="INFO">Current page contains text field 'id=username_field'.</msg>
+<status status="PASS" endtime="20180302 14:36:25.372" starttime="20180302 14:36:25.333"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="username_field"]</arg>
+<arg>demo</arg>
+</arguments>
+<msg timestamp="20180302 14:36:25.372" level="INFO">Typing text 'demo' into text field 'xpath=//*[@id="username_field"]'</msg>
+<status status="PASS" endtime="20180302 14:36:25.428" starttime="20180302 14:36:25.372"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="password_field"]</arg>
+<arg>mode</arg>
+</arguments>
+<msg timestamp="20180302 14:36:25.428" level="INFO">Typing text 'mode' into text field 'xpath=//*[@id="password_field"]'</msg>
+<status status="PASS" endtime="20180302 14:36:25.454" starttime="20180302 14:36:25.428"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180302 14:36:27.454" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180302 14:36:27.454" starttime="20180302 14:36:25.454"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="login_button"]</arg>
+</arguments>
+<msg timestamp="20180302 14:36:27.455" level="INFO">Clicking button 'xpath=//*[@id="login_button"]'.</msg>
+<status status="PASS" endtime="20180302 14:36:27.639" starttime="20180302 14:36:27.454"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180302 14:36:29.641" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180302 14:36:29.641" starttime="20180302 14:36:27.639"></status>
+</kw>
+<status status="PASS" endtime="20180302 14:36:29.642" starttime="20180302 14:36:19.809"></status>
+</kw>
+<kw name="Logout And Verify">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>xpath=//*[@id="container"]/p/a</arg>
+</arguments>
+<msg timestamp="20180302 14:36:29.644" level="INFO">Clicking link 'xpath=//*[@id="container"]/p/a'.</msg>
+<status status="PASS" endtime="20180302 14:36:29.729" starttime="20180302 14:36:29.644"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>id=username_field</arg>
+</arguments>
+<msg timestamp="20180302 14:36:29.758" level="INFO">Current page contains text field 'id=username_field'.</msg>
+<status status="PASS" endtime="20180302 14:36:29.758" starttime="20180302 14:36:29.729"></status>
+</kw>
+<status status="PASS" endtime="20180302 14:36:29.759" starttime="20180302 14:36:29.644"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180302 14:36:29.978" starttime="20180302 14:36:29.759"></status>
+</kw>
+<status status="PASS" endtime="20180302 14:36:29.978" critical="yes" starttime="20180302 14:36:12.976"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180302 14:36:29.981" starttime="20180302 14:36:12.858"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Demo" pass="1">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
