@@ -17,7 +17,7 @@ ${START_URL} =  http://www.amazon.com
 ${SEARCH_TEXT} =  Ferrari 458
 *** Test Cases ***
 Logged out user can search for products
-  [Tags]  Smoke
+  [Tags]  Smoke  view
   Amazon.Search for Products
 
 Logged out user can view a product
