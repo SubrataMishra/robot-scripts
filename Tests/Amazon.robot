@@ -3,14 +3,14 @@ Documentation  This is some basic info about the whole suite
 # notice we're no longer referencing the Selenium2Library in our script!
 #Resource  Resources/Common.robot  # necessary for Setup & Teardown
 #Resource  Resources/Amazon.robot  # necessary for lower level keywords in test cases
-Resource  ../Resources/Amazon.robot
-Resource  ../Resources/Common.robot
+Resource  C:/development/robot-scripts/Resources/Amazon.robot
+Resource  C:/development/robot-scripts/Resources/Common.robot
 
 Test Setup  Begin Web Test
 Test Teardown  End Web Test
 
 # Copy/paste the below line to Terminal window to execute
-# pybot -d Results/Amazonoutput Tests/Amazon.robot
+# pybot -d Results Tests/Amazon.robot
 *** Variables ***
 ${BROWSER} =  chrome
 ${START_URL} =  http://www.amazon.com
